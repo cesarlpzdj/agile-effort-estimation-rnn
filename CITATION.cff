@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this replication package, trained models, or prototype in your research, please cite it as below."
+authors:
+  - family-names: "Lopez de Jesus"
+    given-names: "Cesar"
+    affiliation: "Universidad Autónoma de Ciudad Juárez"
+    email: "al256076@alumnos.uacj.mx"
+  - family-names: "Olmos Sanchez"
+    given-names: "Karla Miroslava"
+    affiliation: "Universidad Autónoma de Ciudad Juárez"
+    email: "kolmos@uacj.mx"
+title: "Empirical Evaluation of Recurrent Neural Networks for Agile Effort Estimation: Replication Package and Decision-Support Prototype"
+version: 1.0.0
+date-released: 2026-10-29
+url: "https://github.com/cesarlpzdj/agile-effort-estimation-rnn"
+keywords:
+  - "agile effort estimation"
+  - "story points"
+  - "deep learning"
+  - "lstm networks"
+  - "empirical software engineering"
+  - "replication package"
+license: MIT

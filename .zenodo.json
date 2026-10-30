@@ -1,0 +1,27 @@
+{
+  "title": "Replication Package: Empirical Evaluation of Recurrent Neural Networks for Agile Effort Estimation",
+  "description": "<p>This repository provides the open-science replication package, experimental benchmarks, and decision-support prototype for the empirical research study <i>\"Empirical Evaluation of Recurrent Neural Networks for Agile Effort Estimation: A Realistic Benchmark and Decision-Support Prototype\"</i>.</p><p>The package contains: (i) deterministic partition definitions mapping all 23,313 issues across 16 Deep-SE projects into chronological splits; (ii) per-issue test predictions across naive heuristics, statistical baselines, recurrent models, and factorial runs (N = 4,671); (iii) automated reproduction scripts generating all manuscript tables and non-parametric statistical tests (Wilcoxon signed-rank and Vargha-Delaney effect sizes) in under ten seconds; (iv) standalone factorial ablation training scripts across independent random seeds; and (v) complete source code for the FastAPI inference microservice and React decision-support prototype.</p>",
+  "creators": [
+    {
+      "name": "Lopez de Jesus, Cesar",
+      "affiliation": "Universidad Autónoma de Ciudad Juárez"
+    },
+    {
+      "name": "Olmos Sanchez, Karla Miroslava",
+      "affiliation": "Universidad Autónoma de Ciudad Juárez"
+    }
+  ],
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": [
+    "Agile Effort Estimation",
+    "Story Points",
+    "Deep Learning",
+    "LSTM Networks",
+    "Empirical Software Engineering",
+    "Decision Support Systems",
+    "Benchmark Evaluation",
+    "Replication Package"
+  ],
+  "upload_type": "software"
+}
