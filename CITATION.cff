@@ -11,6 +11,7 @@ authors:
     email: "kolmos@uacj.mx"
 title: "Empirical Evaluation of Recurrent Neural Networks for Agile Effort Estimation: Replication Package and Decision-Support Prototype"
 version: 1.0.0
+doi: "10.5281/zenodo.23788447"
 date-released: 2026-10-29
 url: "https://github.com/cesarlpzdj/agile-effort-estimation-rnn"
 keywords:
@@ -21,3 +22,4 @@ keywords:
   - "empirical software engineering"
   - "replication package"
 license: MIT
+

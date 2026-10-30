@@ -1,5 +1,6 @@
 # Empirical Evaluation of Recurrent Neural Networks for Agile Effort Estimation
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23788447.svg)](https://doi.org/10.5281/zenodo.23788447)
 [![Journal](https://img.shields.io/badge/Target-Empirical%20Software%20Engineering%20(Springer%20Nature)-blue.svg)](https://www.springer.com/journal/10664)
 [![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12-brightgreen.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-teal.svg)](https://fastapi.tiangolo.com/)
@@ -130,7 +131,8 @@ If you utilize this code, replication package, or benchmark partitions in your r
   title     = {Empirical Evaluation of Recurrent Neural Networks for Agile Effort Estimation},
   journal   = {Empirical Software Engineering},
   year      = {2026},
-  publisher = {Springer}
+  publisher = {Springer},
+  doi       = {10.5281/zenodo.23788447}
 }
 ```
 

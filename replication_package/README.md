@@ -1,10 +1,14 @@
 # Replication Package: Empirical Evaluation of Recurrent Neural Networks for Agile Effort Estimation
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23788447.svg)](https://doi.org/10.5281/zenodo.23788447)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 This repository contains the complete replication package for the study:
 > **Empirical Evaluation of Recurrent Neural Networks for Agile Effort Estimation**  
 > *Target Journal:* Empirical Software Engineering (Springer Nature)  
-> *Author:* César López de Jesús  
-> *Affiliation:* Maestría en Inteligencia Artificial y Analítica de Datos (UACJ)
+> *Authors:* César López de Jesús, Karla Miroslava Olmos Sánchez  
+> *Affiliation:* Maestría en Inteligencia Artificial y Analítica de Datos (UACJ)  
+> *Archived DOI:* [10.5281/zenodo.23788447](https://doi.org/10.5281/zenodo.23788447)
 
 ---
 
