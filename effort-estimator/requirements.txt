@@ -1,0 +1,28 @@
+# ==============================================================================
+# Dependencias de Python para effort-estimator
+# Proyecto: Empirical Evaluation of Recurrent Neural Networks for Agile Effort Estimation
+# Python recomendado: >= 3.10, <= 3.12
+# ==============================================================================
+
+# Núcleo de Aprendizaje Profundo y Modelado
+tensorflow>=2.16.0
+keras>=3.0.0
+
+# Procesamiento Científico y Análisis Estadístico
+numpy>=1.26.0,<2.0.0
+pandas>=2.0.0
+scipy>=1.11.0
+scikit-learn>=1.4.0
+
+# Procesamiento de Lenguaje Natural (PLN)
+nltk>=3.8.0
+
+# Visualización y Diagnóstico
+matplotlib>=3.8.0
+
+# API Backend / Microservicio de Inferencia
+fastapi>=0.110.0
+uvicorn>=0.28.0
+pydantic>=2.0.0
+requests>=2.31.0
+

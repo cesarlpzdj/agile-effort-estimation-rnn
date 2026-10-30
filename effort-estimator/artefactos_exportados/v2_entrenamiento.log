@@ -1,0 +1,262 @@
+TensorFlow 2.16.2 | Keras 3.15.1 | Dispositivos: ['CPU']
+Tickets: 23313 | Proyectos: 16
+Aplicando PLN...
+
+==============================================================================
+PARTICIÓN: RANDOM
+==============================================================================
+Entrenamiento: 14920 | Validación: 3730 | Prueba: 4663
+Modelo v1 original evaluado sobre el mismo conjunto de prueba.
+
+[TFIDF_LSTM_v1_replica] TF-IDF ajustado solo con entrenamiento
+Epoch 1/100
+234/234 - 1s - 4ms/step - loss: 102.5397 - val_loss: 99.1766 - learning_rate: 0.0010
+Epoch 2/100
+234/234 - 0s - 2ms/step - loss: 82.7378 - val_loss: 91.1880 - learning_rate: 0.0010
+Epoch 3/100
+234/234 - 0s - 2ms/step - loss: 75.7388 - val_loss: 88.2405 - learning_rate: 0.0010
+Epoch 4/100
+234/234 - 0s - 2ms/step - loss: 70.8033 - val_loss: 86.9058 - learning_rate: 0.0010
+Epoch 5/100
+234/234 - 0s - 2ms/step - loss: 66.6781 - val_loss: 86.3146 - learning_rate: 0.0010
+Epoch 6/100
+234/234 - 0s - 2ms/step - loss: 62.5274 - val_loss: 86.3284 - learning_rate: 0.0010
+Epoch 7/100
+234/234 - 0s - 2ms/step - loss: 58.0644 - val_loss: 86.5777 - learning_rate: 0.0010
+Epoch 8/100
+234/234 - 0s - 2ms/step - loss: 52.8130 - val_loss: 86.9974 - learning_rate: 0.0010
+Epoch 9/100
+234/234 - 0s - 2ms/step - loss: 47.7812 - val_loss: 87.6367 - learning_rate: 0.0010
+Epoch 10/100
+
+Epoch 10: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+234/234 - 0s - 2ms/step - loss: 43.0997 - val_loss: 87.9022 - learning_rate: 0.0010
+Epoch 11/100
+234/234 - 0s - 2ms/step - loss: 36.9953 - val_loss: 88.4148 - learning_rate: 5.0000e-04
+Epoch 12/100
+234/234 - 0s - 2ms/step - loss: 34.2895 - val_loss: 88.9388 - learning_rate: 5.0000e-04
+Epoch 13/100
+234/234 - 0s - 2ms/step - loss: 32.4576 - val_loss: 88.6227 - learning_rate: 5.0000e-04
+Epoch 14/100
+234/234 - 0s - 2ms/step - loss: 30.2790 - val_loss: 88.6414 - learning_rate: 5.0000e-04
+Epoch 15/100
+
+Epoch 15: ReduceLROnPlateau reducing learning rate to 0.0002500000118743628.
+234/234 - 0s - 2ms/step - loss: 27.9795 - val_loss: 89.1953 - learning_rate: 5.0000e-04
+Epoch 15: early stopping
+Restoring model weights from the end of the best epoch: 5.
+
+Vocabulario: 20000 tokens | Textos truncados a 100: 8.0% | Mediana de tokens: 29
+
+[EMB_LSTM_mse_raw] Ablación: Embedding+LSTM, MSE, objetivo crudo
+Epoch 1/100
+234/234 - 7s - 28ms/step - loss: 99.8598 - val_loss: 104.5002 - learning_rate: 0.0010
+Epoch 2/100
+234/234 - 6s - 25ms/step - loss: 77.7082 - val_loss: 86.2877 - learning_rate: 0.0010
+Epoch 3/100
+234/234 - 6s - 26ms/step - loss: 54.1756 - val_loss: 82.0232 - learning_rate: 0.0010
+Epoch 4/100
+234/234 - 6s - 25ms/step - loss: 36.5847 - val_loss: 81.5445 - learning_rate: 0.0010
+Epoch 5/100
+234/234 - 6s - 25ms/step - loss: 25.8061 - val_loss: 83.7084 - learning_rate: 0.0010
+Epoch 6/100
+234/234 - 6s - 25ms/step - loss: 20.7995 - val_loss: 84.7478 - learning_rate: 0.0010
+Epoch 7/100
+234/234 - 6s - 25ms/step - loss: 16.0016 - val_loss: 85.4219 - learning_rate: 0.0010
+Epoch 8/100
+234/234 - 6s - 25ms/step - loss: 13.6564 - val_loss: 85.9053 - learning_rate: 0.0010
+Epoch 9/100
+
+Epoch 9: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+234/234 - 6s - 25ms/step - loss: 11.4415 - val_loss: 87.8628 - learning_rate: 0.0010
+Epoch 10/100
+234/234 - 6s - 25ms/step - loss: 9.7080 - val_loss: 86.9621 - learning_rate: 5.0000e-04
+Epoch 11/100
+234/234 - 6s - 25ms/step - loss: 7.7179 - val_loss: 87.9571 - learning_rate: 5.0000e-04
+Epoch 12/100
+234/234 - 6s - 25ms/step - loss: 6.9879 - val_loss: 89.3828 - learning_rate: 5.0000e-04
+Epoch 13/100
+234/234 - 6s - 25ms/step - loss: 6.5311 - val_loss: 91.0410 - learning_rate: 5.0000e-04
+Epoch 14/100
+
+Epoch 14: ReduceLROnPlateau reducing learning rate to 0.0002500000118743628.
+234/234 - 6s - 25ms/step - loss: 6.1928 - val_loss: 89.5176 - learning_rate: 5.0000e-04
+Epoch 14: early stopping
+Restoring model weights from the end of the best epoch: 4.
+
+[EMB_LSTM_v2] Embedding+LSTM, Huber, objetivo log1p(SP)
+Epoch 1/100
+234/234 - 6s - 27ms/step - loss: 0.2831 - val_loss: 0.2151 - learning_rate: 0.0010
+Epoch 2/100
+234/234 - 6s - 24ms/step - loss: 0.1710 - val_loss: 0.2015 - learning_rate: 0.0010
+Epoch 3/100
+234/234 - 6s - 25ms/step - loss: 0.1287 - val_loss: 0.2086 - learning_rate: 0.0010
+Epoch 4/100
+234/234 - 6s - 24ms/step - loss: 0.1018 - val_loss: 0.2076 - learning_rate: 0.0010
+Epoch 5/100
+234/234 - 6s - 25ms/step - loss: 0.0870 - val_loss: 0.2170 - learning_rate: 0.0010
+Epoch 6/100
+234/234 - 6s - 24ms/step - loss: 0.0743 - val_loss: 0.2140 - learning_rate: 0.0010
+Epoch 7/100
+
+Epoch 7: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+234/234 - 6s - 24ms/step - loss: 0.0624 - val_loss: 0.2230 - learning_rate: 0.0010
+Epoch 8/100
+234/234 - 6s - 24ms/step - loss: 0.0494 - val_loss: 0.2171 - learning_rate: 5.0000e-04
+Epoch 9/100
+234/234 - 6s - 24ms/step - loss: 0.0370 - val_loss: 0.2214 - learning_rate: 5.0000e-04
+Epoch 10/100
+234/234 - 6s - 24ms/step - loss: 0.0310 - val_loss: 0.2270 - learning_rate: 5.0000e-04
+Epoch 11/100
+234/234 - 6s - 25ms/step - loss: 0.0278 - val_loss: 0.2310 - learning_rate: 5.0000e-04
+Epoch 12/100
+
+Epoch 12: ReduceLROnPlateau reducing learning rate to 0.0002500000118743628.
+234/234 - 6s - 25ms/step - loss: 0.0251 - val_loss: 0.2371 - learning_rate: 5.0000e-04
+Epoch 12: early stopping
+Restoring model weights from the end of the best epoch: 2.
+
+MAE P0 (adivinanza aleatoria): 6.672
+
+--- Métricas globales ---
+                   Modelo   MAE  MdAE   RMSE   SA_%  Sesgo  Pred_max  Pred_p99  MAE_SP>=13  Tiempo_entrenamiento_s  Epocas
+           Baseline_media 4.947 3.198 10.240 25.856 -0.094  6.198000     6.198   20.420000                     NaN     NaN
+         Baseline_mediana 4.347 2.000 10.493 34.843 -2.292  4.000000     4.000   22.618000                     NaN     NaN
+Baseline_mediana_proyecto 3.962 2.000 10.223 40.619 -2.081  8.000000     8.000   21.306000                     NaN     NaN
+   TFIDF_LSTM_v1_original 4.158 1.971  9.078 37.678 -1.081 54.686001    28.862   17.511999                     NaN     NaN
+    TFIDF_LSTM_v1_replica 4.433 2.309  9.069 33.554  0.050 54.470001    28.846   16.153000                   6.949    15.0
+         EMB_LSTM_mse_raw 4.158 2.223  9.061 37.679 -0.678 71.019997    28.267   17.549000                  82.318    14.0
+              EMB_LSTM_v2 3.981 1.929  9.411 40.329 -1.330 50.030998    18.576   18.617001                  69.417    12.0
+
+--- Pruebas estadísticas (errores absolutos) ---
+ Referencia                 Comparado  MAE_ref  MAE_comparado  Wilcoxon_p    A12       Efecto
+EMB_LSTM_v2            Baseline_media   3.9814         4.9471      0.0000 0.6501      mediano
+EMB_LSTM_v2          Baseline_mediana   3.9814         4.3474      0.0000 0.5370 despreciable
+EMB_LSTM_v2 Baseline_mediana_proyecto   3.9814         3.9620      0.0001 0.4622 despreciable
+EMB_LSTM_v2    TFIDF_LSTM_v1_original   3.9814         4.1583      0.0299 0.5084 despreciable
+EMB_LSTM_v2     TFIDF_LSTM_v1_replica   3.9814         4.4335      0.0000 0.5463 despreciable
+EMB_LSTM_v2          EMB_LSTM_mse_raw   3.9814         4.1582      0.0000 0.5318 despreciable
+
+==============================================================================
+PARTICIÓN: TEMPORAL
+==============================================================================
+Entrenamiento: 13981 | Validación: 4661 | Prueba: 4671
+
+[TFIDF_LSTM_v1_replica] TF-IDF ajustado solo con entrenamiento
+Epoch 1/100
+219/219 - 1s - 4ms/step - loss: 122.2754 - val_loss: 83.3424 - learning_rate: 0.0010
+Epoch 2/100
+219/219 - 0s - 2ms/step - loss: 96.6240 - val_loss: 82.0031 - learning_rate: 0.0010
+Epoch 3/100
+219/219 - 0s - 2ms/step - loss: 86.6127 - val_loss: 84.0783 - learning_rate: 0.0010
+Epoch 4/100
+219/219 - 0s - 2ms/step - loss: 80.1954 - val_loss: 86.2519 - learning_rate: 0.0010
+Epoch 5/100
+219/219 - 0s - 2ms/step - loss: 74.2681 - val_loss: 87.8074 - learning_rate: 0.0010
+Epoch 6/100
+219/219 - 0s - 2ms/step - loss: 68.0071 - val_loss: 89.6641 - learning_rate: 0.0010
+Epoch 7/100
+
+Epoch 7: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+219/219 - 0s - 2ms/step - loss: 61.0982 - val_loss: 91.4903 - learning_rate: 0.0010
+Epoch 8/100
+219/219 - 0s - 2ms/step - loss: 53.9882 - val_loss: 94.1446 - learning_rate: 5.0000e-04
+Epoch 9/100
+219/219 - 0s - 2ms/step - loss: 50.2596 - val_loss: 95.5205 - learning_rate: 5.0000e-04
+Epoch 10/100
+219/219 - 0s - 2ms/step - loss: 46.4176 - val_loss: 96.8726 - learning_rate: 5.0000e-04
+Epoch 11/100
+219/219 - 0s - 2ms/step - loss: 43.8398 - val_loss: 98.2517 - learning_rate: 5.0000e-04
+Epoch 12/100
+
+Epoch 12: ReduceLROnPlateau reducing learning rate to 0.0002500000118743628.
+219/219 - 0s - 2ms/step - loss: 40.2056 - val_loss: 99.1219 - learning_rate: 5.0000e-04
+Epoch 12: early stopping
+Restoring model weights from the end of the best epoch: 2.
+
+Vocabulario: 20000 tokens | Textos truncados a 100: 7.8% | Mediana de tokens: 29
+
+[EMB_LSTM_mse_raw] Ablación: Embedding+LSTM, MSE, objetivo crudo
+Epoch 1/100
+219/219 - 6s - 28ms/step - loss: 122.5234 - val_loss: 86.3532 - learning_rate: 0.0010
+Epoch 2/100
+219/219 - 6s - 25ms/step - loss: 88.6843 - val_loss: 84.0960 - learning_rate: 0.0010
+Epoch 3/100
+219/219 - 6s - 25ms/step - loss: 59.3049 - val_loss: 85.2336 - learning_rate: 0.0010
+Epoch 4/100
+219/219 - 6s - 25ms/step - loss: 42.3029 - val_loss: 86.0747 - learning_rate: 0.0010
+Epoch 5/100
+219/219 - 6s - 25ms/step - loss: 29.8916 - val_loss: 88.1394 - learning_rate: 0.0010
+Epoch 6/100
+219/219 - 6s - 25ms/step - loss: 23.1112 - val_loss: 86.8119 - learning_rate: 0.0010
+Epoch 7/100
+
+Epoch 7: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+219/219 - 6s - 25ms/step - loss: 20.6176 - val_loss: 87.4411 - learning_rate: 0.0010
+Epoch 8/100
+219/219 - 6s - 25ms/step - loss: 14.4431 - val_loss: 87.6018 - learning_rate: 5.0000e-04
+Epoch 9/100
+219/219 - 6s - 25ms/step - loss: 12.3373 - val_loss: 91.1897 - learning_rate: 5.0000e-04
+Epoch 10/100
+219/219 - 6s - 25ms/step - loss: 10.4837 - val_loss: 93.1751 - learning_rate: 5.0000e-04
+Epoch 11/100
+219/219 - 6s - 25ms/step - loss: 9.2847 - val_loss: 94.3059 - learning_rate: 5.0000e-04
+Epoch 12/100
+
+Epoch 12: ReduceLROnPlateau reducing learning rate to 0.0002500000118743628.
+219/219 - 6s - 25ms/step - loss: 8.6466 - val_loss: 96.2415 - learning_rate: 5.0000e-04
+Epoch 12: early stopping
+Restoring model weights from the end of the best epoch: 2.
+
+[EMB_LSTM_v2] Embedding+LSTM, Huber, objetivo log1p(SP)
+Epoch 1/100
+219/219 - 6s - 28ms/step - loss: 0.3112 - val_loss: 0.2007 - learning_rate: 0.0010
+Epoch 2/100
+219/219 - 6s - 25ms/step - loss: 0.1775 - val_loss: 0.1997 - learning_rate: 0.0010
+Epoch 3/100
+219/219 - 6s - 25ms/step - loss: 0.1331 - val_loss: 0.2111 - learning_rate: 0.0010
+Epoch 4/100
+219/219 - 6s - 25ms/step - loss: 0.1109 - val_loss: 0.2196 - learning_rate: 0.0010
+Epoch 5/100
+219/219 - 6s - 25ms/step - loss: 0.0899 - val_loss: 0.2112 - learning_rate: 0.0010
+Epoch 6/100
+219/219 - 6s - 25ms/step - loss: 0.0698 - val_loss: 0.2153 - learning_rate: 0.0010
+Epoch 7/100
+
+Epoch 7: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+219/219 - 6s - 25ms/step - loss: 0.0603 - val_loss: 0.2262 - learning_rate: 0.0010
+Epoch 8/100
+219/219 - 6s - 25ms/step - loss: 0.0496 - val_loss: 0.2306 - learning_rate: 5.0000e-04
+Epoch 9/100
+219/219 - 6s - 25ms/step - loss: 0.0363 - val_loss: 0.2364 - learning_rate: 5.0000e-04
+Epoch 10/100
+219/219 - 6s - 25ms/step - loss: 0.0316 - val_loss: 0.2388 - learning_rate: 5.0000e-04
+Epoch 11/100
+219/219 - 6s - 25ms/step - loss: 0.0277 - val_loss: 0.2436 - learning_rate: 5.0000e-04
+Epoch 12/100
+
+Epoch 12: ReduceLROnPlateau reducing learning rate to 0.0002500000118743628.
+219/219 - 6s - 25ms/step - loss: 0.0258 - val_loss: 0.2460 - learning_rate: 5.0000e-04
+Epoch 12: early stopping
+Restoring model weights from the end of the best epoch: 2.
+
+MAE P0 (adivinanza aleatoria): 5.993
+
+--- Métricas globales ---
+                   Modelo   MAE  MdAE  RMSE   SA_%  Sesgo  Pred_max  Pred_p99  MAE_SP>=13  Tiempo_entrenamiento_s  Epocas
+           Baseline_media 4.257 3.506 7.360 28.966  1.445  6.506000     6.506      17.723                     NaN     NaN
+         Baseline_mediana 3.256 2.000 7.295 45.665 -1.062  4.000000     4.000      20.230                     NaN     NaN
+Baseline_mediana_proyecto 2.978 2.000 7.189 50.305 -0.866  8.000000     8.000      19.052                     NaN     NaN
+    TFIDF_LSTM_v1_replica 3.778 2.421 6.914 36.955  0.759 29.739000    19.014      14.426                   5.190    12.0
+         EMB_LSTM_mse_raw 3.454 2.009 6.683 42.374 -0.168 41.661999    24.916      14.850                  66.838    12.0
+              EMB_LSTM_v2 3.256 1.891 7.010 45.666 -0.945 59.703999    13.627      18.025                  66.813    12.0
+
+--- Pruebas estadísticas (errores absolutos) ---
+ Referencia                 Comparado  MAE_ref  MAE_comparado  Wilcoxon_p    A12       Efecto
+EMB_LSTM_v2            Baseline_media   3.2564         4.2573      0.0000 0.6780      mediano
+EMB_LSTM_v2          Baseline_mediana   3.2564         3.2565      0.0314 0.5203 despreciable
+EMB_LSTM_v2 Baseline_mediana_proyecto   3.2564         2.9784      0.0000 0.4437 despreciable
+EMB_LSTM_v2     TFIDF_LSTM_v1_replica   3.2564         3.7785      0.0000 0.5645      pequeño
+EMB_LSTM_v2          EMB_LSTM_mse_raw   3.2564         3.4537      0.0000 0.5243 despreciable
+
+Resumen guardado en artefactos_exportados/v2/resumen_comparativo.csv

@@ -1,0 +1,44 @@
+# ==============================================================================
+# .gitignore para el Repositorio de Investigación y Replicación
+# "Empirical Evaluation of Recurrent Neural Networks for Agile Effort Estimation"
+# ==============================================================================
+
+# Sistema Operativo y Editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Entornos Virtuales y Caché de Python
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Dependencias y Compilación de Node / Frontend
+node_modules/
+dist/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Manuscrito LaTeX y Documentos de Publicación
+latex-paper/
+
+# Carpetas de Archivo Histórico y Scratch Interno
+scratch/
+archivo_historico_fase1/
+documentos_soporte_latex/
+
+# Documentos Internos de Seguimiento y Dictamen
+*.docx
+contexto-articulo.md
+

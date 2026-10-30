@@ -1,0 +1,9 @@
+{
+  "max_len": 100,
+  "vocab_size": 20000,
+  "target": "log1p",
+  "inverse": "expm1, clip >= 0",
+  "loss": "huber(delta=1.0)",
+  "split": "temporal",
+  "seed": 42
+}

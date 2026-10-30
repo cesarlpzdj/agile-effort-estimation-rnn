@@ -1,0 +1,10 @@
+POST http://127.0.0.1:8000/api/v1/predict
+Content-Type: application/json
+
+{
+  "ticket_id": "PRJ-8492",
+  "project_domain": "moodle",
+  "title": "Unhandled exception in the authentication module",
+  "description": "When a user tries to log in using the SSO provider, the database connection times out after 30 seconds. This needs to be caught and handled gracefully.",
+  "issue_type": "Bug"
+}
